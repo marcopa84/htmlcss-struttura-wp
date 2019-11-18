@@ -61,15 +61,21 @@ nav{
   background-color: rgba(102, 102, 102, 0.6);
   text-align: center;
 }
+nav a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
 nav ul{
   margin: auto;
   width: 80%;
   list-style: none;
 }
 nav ul li{
+  position: relative;
   line-height: 48px;
   vertical-align: middle;
-  display: inline-block;
+  float: left;
   font-size: 15px;
   border-left: 1px solid #666666;
   padding: 0 15px;
@@ -78,8 +84,22 @@ nav ul li:hover{
   background-color: #302A26;
   cursor: pointer;
 }
+#menu ul ul {
+	position: absolute;
+	top: 48px;
+  left: 0;
+  width: 100%;
+	visibility: hidden;
 
+}
 
+#menu ul li:hover ul {
+	visibility: visible;
+  background-color: rgba(102, 102, 102, 0.9);
+}
+#menu ul ul > li {
+  width: 100%;
+}
 main{
   height:580px;
   width: 100%;
