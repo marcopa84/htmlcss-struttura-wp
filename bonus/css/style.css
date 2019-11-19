@@ -101,7 +101,6 @@ nav ul li:hover{
   width: 100%;
 }
 main{
-  height:580px;
   width: 100%;
 }
 
@@ -111,7 +110,7 @@ main{
   border-radius: 5px;
 }
 
-.float_left:after{
+main:after{
   content: "";
   display: table;
   clear: both;
